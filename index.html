@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h2 id="result"></h2>
+    <div class="container">
+        <div class="result">
+            <p id="player_wins">Player: 0</p>
+            <p id="computer_wins">Computer: 0</p>
+            <p id="draws">Draw: 0</p>
+        </div>
+        <!--side by side affianca gli elementi-->
+        <div class="sideBySide"> 
+            <div class="player">
+                <!--container per scelta del giocatore-->
+                <h2>Player</h2>
+                <img src="images/rockpaperscissors.png" alt="rock paper scissors" id="player_placeholder">
+                <img src="images/rock.png" alt="rock" id="player_rock" style="display: none;">
+                <img src="images/paper.png" alt="paper" id="player_paper" style="display: none;">
+                <img src="images/scissors.png" alt="scissors" id="player_scissors" style="display: none;">
+            </div>
+            <div class="computer">
+                <!--container per scelta del computer-->
+                <h2>Computer</h2>
+                <img src="images/rockpaperscissors.png" alt="rock paper scissors" id="computer_placeholder">
+                <img src="images/rock.png" alt="rock" id="computer_rock" style="display: none;">
+                <img src="images/paper.png" alt="paper" id="computer_paper" style="display: none;">
+                <img src="images/scissors.png" alt="scissors" id="computer_scissors" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <!--aggiungo un attributo data-choice per ogni bottone per poter identificare la scelta del giocatore-->
+        <button id="rockBtn" class="playerbtn" data-choice="rock">Rock</button>
+        <button id="paperBtn" class="playerbtn" data-choice="paper">Paper</button>
+        <button id="scissorsBtn" class="playerbtn" data-choice="scissors">Scissors</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
